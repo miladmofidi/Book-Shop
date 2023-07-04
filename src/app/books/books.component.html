@@ -1,0 +1,16 @@
+<h2>Book List:</h2>
+<button (click)="isShowing = !isShowing">
+  <ng-container *ngIf="!isShowing" >Show Books</ng-container>
+  <ng-container *ngIf="isShowing" >Hide Books</ng-container>
+</button>
+
+<ul *ngIf="isShowing">
+  <li>
+    <img src="{{ src1 }}" alt=" {{ name1 }}" width="100"/>
+    {{name1}} By {{author1}}
+  </li>
+  <li>
+    <img src="{{ src2 }}" alt=" {{ name2 }}" width="100"/>
+    {{name2}} By {{author2}}
+  </li>
+</ul>
