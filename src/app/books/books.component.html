@@ -8,13 +8,7 @@
 
 <ul *ngIf="isShowing">
   <ng-container *ngFor="let singleBook of books">
-    <app-book [book]="singleBook" (bookEmitter)="addToCard($event)"   ></app-book>
-<!--    <li class="book">
-      <img [src]="book.image" [alt]="book.name" width="100"/>
-      <p class="title" >{{book.name | titlecase }} By {{book.author | titlecase}} </p>
-      <p class="currency" > {{ book.amount | currency: 'EUR' }}</p>
-      <button>Add To Card</button>
-    </li>-->
+    <app-book [book]="singleBook"></app-book>
 
   </ng-container>
 </ul>
