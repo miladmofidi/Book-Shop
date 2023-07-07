@@ -1,4 +1,4 @@
-# BookShop
+# Book Shop
 
 This is a Front-end project for a Bookstore with Sign-up, Sign-in, and Cart features the project is deployable and deployed on Firebase.
 
