@@ -21,7 +21,7 @@ export class BooksService {
         amount: 19.99,
       },
       {
-        name:  "The Art of Computer Programming: Volume 1: Fundamental Algorithms",
+        name:  "The Art of Computer Programming: Volume 1",
         author: "Donald E. Knuth",
         image: "https://m.media-amazon.com/images/I/71++Mc6LvEL._SY466_.jpg",
         amount: 39.99,
