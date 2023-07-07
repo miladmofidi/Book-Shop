@@ -6,7 +6,7 @@
   <ng-container *ngIf="isShowing">Hide Books</ng-container>
 </button>-->
 
-<ul *ngIf="isShowing" class="flex flex-wrap justify-center">
+<ul *ngIf="isShowing" class="flex flex-wrap justify-items-start">
   <ng-container *ngFor="let singleBook of books; let i=index">
     <app-book [book]="singleBook" class="w-1/2 p-5 text-center">
     </app-book>
