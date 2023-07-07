@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {initializeApp} from "firebase/app";
 import {firebaseConfig} from "./firebase.config";
 import {AuthService} from "./auth/auth.service";
+import {CartService} from "./services/cart.service";
+import {Book} from "./interface/Book";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +14,7 @@ export class AppComponent implements OnInit{
 
   title = 'Book Shop';
 
-  constructor(private authService: AuthService) {
+  constructor(private authService: AuthService, private cartService: CartService) {
   }
 
   ngOnInit(): void {
@@ -24,5 +26,9 @@ export class AppComponent implements OnInit{
 
   logout() {
     this.authService.logout();
+  }
+
+  getCart(): Book[] {
+    return this.cartService.get();
   }
 }

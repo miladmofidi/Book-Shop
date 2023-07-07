@@ -1,9 +1,19 @@
-<h1>Your Cart:</h1>
-<div *ngIf="getCart().length > 0">
-  <div *ngFor="let book of getCart()">
-    <p> {{book.name}} </p>
+<div class="py-8 px-4">
+  <div class="max-w-2xl mx-4">
+    <h1 class="text-3xl text-purple-800 font-bold mb-4">Your Cart:</h1>
+
+    <div class="solid border-10 border-b-fuchsia-950" *ngIf="getCart().length > 0">
+      <div class="grid gap-4">
+        <div *ngFor="let book of getCart()" class="bg-white rounded-lg p-4 shadow-md">
+          <div class="flex items-left">
+            <img [src]="book.image" alt="Book Icon" class="w-12 h-12 rounded-full mr-4">
+            <p class="text-purple-800 align-text-bottom">{{ book.name | titlecase  }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="getCart().length == 0" class="text-purple-800 mt-4">No books in your cart</div>
   </div>
 </div>
 
-
-<div *ngIf="getCart().length == 0">No books in your cart</div>
