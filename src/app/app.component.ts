@@ -5,6 +5,7 @@ import {AuthService} from "./auth/auth.service";
 import {CartService} from "./services/cart.service";
 import {Book} from "./interface/Book";
 import {Router} from "@angular/router";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-root',

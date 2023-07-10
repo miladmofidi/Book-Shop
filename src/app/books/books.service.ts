@@ -9,13 +9,13 @@ export class BooksService {
   getBooks(): Book[]{
     return [
       {
-        name:  "clean code",
+        name:  "clean code for professional programmers",
         author: "robert c. martin",
         image: "https://m.media-amazon.com/images/I/41xShlnTZTL._SY466_.jpg",
         amount: 24.99,
       },
       {
-        name:  "pragmatic programmer",
+        name:  "pragmatic programmer for professional and beginner programmers",
         author: "david thomas",
         image: "https://m.media-amazon.com/images/I/71f743sOPoL._SY466_.jpg",
         amount: 19.99,

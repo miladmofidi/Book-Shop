@@ -9,6 +9,9 @@ import { BookComponent } from './books/book/book.component';
 import {BooksModule} from "./books/books.module";
 import { CartComponent } from './cart/cart.component';
 import {AuthModule} from "./auth/auth.module";
+import { ToastrModule } from 'ngx-toastr';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import {AuthModule} from "./auth/auth.module";
     AppRoutingModule,
     FormsModule,
     BooksModule,
-    AuthModule
+    AuthModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
