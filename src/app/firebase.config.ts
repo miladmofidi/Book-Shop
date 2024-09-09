@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 export const firebaseConfig = {
-  apiKey: "AIzaSyDYOO9mljncSb_vKwh3v_QoEtsCV1faToI",
+  apiKey: "",
   authDomain: "bookshop-6931d.firebaseapp.com",
   projectId: "bookshop-6931d",
-  storageBucket: "bookshop-6931d.appspot.com",
-  messagingSenderId: "590575108084",
-  appId: "1:590575108084:web:c05b31f1286ffcf6d283a1"
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 
 // Initialize Firebase
